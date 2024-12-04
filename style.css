@@ -158,8 +158,7 @@ img {
   background: url(images/illustration-working.svg);
   width: 50rem;
   min-height: 27rem;
-  background-size: cover;
-  background-size: 110%;
+  background-size: 120%;
   background-position: 2rem 0;
   background-repeat: no-repeat;
 }
@@ -185,6 +184,11 @@ img {
   }
   .content {
     margin-left: 0 !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    overflow-x: hidden;
   }
 }
 .input {
