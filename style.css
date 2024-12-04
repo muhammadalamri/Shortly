@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
+
 a {
   text-decoration: none;
 }
@@ -22,6 +23,11 @@ button {
   margin: 0 auto;
   max-width: 1440px;
   width: 75%;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 94%;
+  }
 }
 img {
   max-width: 100%;
@@ -134,7 +140,7 @@ img {
 .hero {
   padding: 5rem 0;
   display: flex;
-
+  overflow-x: hidden;
   align-items: center;
   gap: 4rem;
 }
@@ -156,10 +162,10 @@ img {
 }
 .hero .img {
   background: url(images/illustration-working.svg);
-  width: 50rem;
+  width: 45rem;
   min-height: 27rem;
-  background-size: 120%;
-  background-position: 2rem 0;
+  background-size: 100%;
+  background-position: 5rem 0;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
@@ -169,33 +175,30 @@ img {
     text-align: center;
     gap: 0;
   }
-  .hero .img {
-    width: 27rem;
-    background-position: 4rem 0;
-  }
+
   .hero p {
-    width: 70%;
+    width: 95%;
     margin: 1rem auto;
   }
   .hero h1 {
     font-size: 2.5rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 3rem auto 0;
   }
   .content {
     margin-left: 0 !important;
   }
 }
 @media (max-width: 480px) {
-  .hero {
-    overflow-x: hidden;
+  .hero .img {
+    width: 30rem;
   }
 }
 .input {
   position: relative;
   background: var(--very-dark-blue);
   min-height: 5rem;
-  overflow: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,6 +286,7 @@ img {
   }
   .features .box {
     text-align: left !important;
+    border-radius: 0.5rem;
   }
 }
 
@@ -304,7 +308,7 @@ img {
 .features .box {
   z-index: 100;
   background: #fff;
-  padding: 0 2rem 2rem;
+  padding: 0 0.4rem 3rem;
   text-align: center;
 }
 .features .box:nth-of-type(2) {
